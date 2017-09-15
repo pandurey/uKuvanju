@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>uKuvanju</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+	<!-- jQuery -->
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	
+	<!-- Javacript -->
+	<script type="text/javascript" src='js/javascript.js'></script>	
+</head>
+<body>
+
+	<div class="site-container">
+
+		<div class="side-bar-l">
+			<div class="title">MENI</div>
+			<div class="close">
+				<a href="" class='fui-cross close-sidebar-l'></a>
+			</div>
+			
+			<div class="nav">
+				<nav>
+					<ul>
+						<li><a href="">POČETNA</a></li>
+						<li><a href="">RECEPTI</a>
+							<ul>
+								<li><a href="">deserti</a></li>
+								<li><a href="">glavna jela</a></li>
+								<li><a href="">salate</a></li>
+								<li><a href="">ribe i morski plodovi</a></li>
+								<li><a href="">paste</a></li>
+							</ul>
+						</li>
+						<li><a href="">O AUTORU</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="social-box">
+				<a href="" class='fui-facebook'></a>
+				<a href="" class='fui-twitter'></a>
+				<a href="" class='fui-pinterest'></a>
+				<a href="" class='fui-instagram'></a>
+			</div>
+		</div>
+		<div class="side-bar-r">
+			<div class="close">
+				<a href="" class='fui-cross close-sidebar-r'>
+					
+				</a>
+			</div>
+			
+			<div class="user-container">
+				<div class="user-login user-tabs">
+					<div class="tabs">
+						<button class='btn tabs-names active' id='tab-sign-in' onclick='openTab("sign-in", "tab-sign-in")'>Sign in</button>
+						<button class='btn tabs-names' id='tab-register' onclick='openTab("register", "tab-register")'>Register</button>
+					</div>
+					<div class="logo">
+						<img src="img/logo-s.png" alt='uKuvanju logo' title="uKuvanju.com">
+					</div>
+					<div id="sign-in" class='tab'>
+						<input type="text" class="tb" name="tbUsername" id="tbUsername" placeholder="Username">
+						<input type="password" class="tb" name="tbPassword" id="tbPassword" placeholder="Password">
+						<button type='submit' class='btn' name='btnSubmit' id='btnSign'>Sign in</button>
+						<a href="" class='btn' id='fb-login'><span class="fui-facebook"></span>Facebook login</a>
+						<div class="click-response">
+							<span class='error'>* Invalid username/password</span>
+						</div>
+					</div>
+					<div id="register" class='tab'>
+						2
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="top-bar">
+			<div class="row">
+				<div class="hamburger-menu top-icon">
+					<a href="" class='open-sidebar-l'>
+						<span class="fui-list"></span>
+					</a>
+				</div>
+				<div class="logo">
+					<img src="assets/img/logo-s.png" alt='uKuvanju logo' title="uKuvanju.com">
+				</div>
+				<div class="user-menu top-icon">
+					<a href="" class='open-sidebar-r'>
+						<span class="fui-user"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="row">
+				<div class="slider">
+					<img src="assets/img/slider-bg.jpg" alt="">
+					<div class="row">
+						<div class="slider-container">
+							
+						</div>
+					</div>
+				</div>
+				<div class="site-info">
+					<div class="row">
+						<div class="logo">
+							<img src="assets/img/logo-m.png" alt='uKuvanju logo' title="uKuvanju.com">
+						</div>
+						<div class="site-text">
+							<p>Ovaj projekat je rezultat ispitnih obaveza iz predmeta <span>Praktikum</span> - <span>Web programiranje</span> i nije rađen u komercijalne svrhe.</p>
+							<a href="">O autoru</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="recipes">
+			<div class="row">
+				<div class="title"><span>Najpopularniji recepti</span></div>
+				<div class="popular container">
+					<div class="food-item-box-l">
+						<div class="food-text-block">
+							<div class="category"><a href="">deserti</a></div>
+							<div class="title">
+								<a href="">Rotkvice od pomorandze</a>
+							</div>
+							<div class="uploader"><a href="">uKuvanju</a></div>
+							<div class="uploader-img"></div>
+						</div>
+						<div class="food-img" style='background-image: url("img/food/domaci-caj.jpg")'></div>
+					</div>
+					<div class="food-item-box-l">
+						<div class="food-text-block">
+							<div class="category"><a href="">deserti</a></div>
+							<div class="title">Domaći čaj od papaje</div>
+							<div class="uploader"><a href="">uKuvanju</a></div>
+							<div class="uploader-img"></div>
+						</div>
+						<div class="food-img" style='background-image: url("img/food/domaci-caj.jpg")'></div>
+					</div>
+					<div class="food-item-box-l">
+						<div class="food-text-block"></div>
+						<div class="food-img"></div>
+					</div>
+					<div class="food-item-box-l">
+						<div class="food-text-block"></div>
+						<div class="food-img"></div>
+					</div>
+				</div>
+				<div class="title"><span>Najnoviji recepti</span></div>
+				<div class="latest container">
+					<div class="food-item-box-s">
+
+						<a href=""><div class="food-img" style='background-image: url("img/food/domaci-caj.jpg")'></div></a>
+						<div class="food-text-block">
+							<div class="title">
+								<a href="">Bućkuriš od morskih plodova</a>
+							</div>
+							<div class="details">
+								<div class="views">2560</div>
+								<div class="uploader"><a href=''>Milica</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="food-item-box-s">
+						<div class="food-img"></div>
+						<div class="food-text-block"></div>
+					</div>
+					<div class="food-item-box-s">
+						<div class="food-img"></div>
+						<div class="food-text-block"></div>
+					</div>
+					<div class="food-item-box-s">
+						<div class="food-img"></div>
+						<div class="food-text-block"></div>
+					</div>
+					<div class="food-item-box-s">
+						<div class="food-img"></div>
+						<div class="food-text-block"></div>
+					</div>
+					<div class="food-item-box-s">
+						<div class="food-img"></div>
+						<div class="food-text-block"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="row">
+				<div class="logo">
+					<div class="row">
+						<div class="logo-img">
+							<img src="assets/img/logo-m.png" alt='uKuvanju logo' title="uKuvanju.com">
+						</div>
+					</div>
+				</div>
+				<div class="links-wrap">
+					<div class="links" id='main-links'>
+						<ul>
+							<li><a href="">Početna</a></li>
+							<li><a href="">Recepti</a></li>
+							<li><a href="">O autoru</a></li>
+						</ul>
+					</div>
+					<div class="links" id='category-links'>
+						<ul>
+							<li><a href="">Početna</a></li>
+							<li><a href="">Recepti</a></li>
+							<li><a href="">Glavna jela</a></li>
+							<li><a href="">Salate</a></li>
+							<li><a href="">Deserti</a></li>
+							<li><a href="">Morski plodovi</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="designed">Designed by Marko Bogdanović &copy 2017</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	
+</body>
+</html>

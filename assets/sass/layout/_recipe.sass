@@ -1,0 +1,283 @@
+.recipe-container
+	.title
+		+responsive-12(12)
+		background: $color-1
+		font-weight: 500
+
+		+border-radius(4px, 4px, 4px, 4px)
+		span
+			font-size: 2em
+	.recipe
+		+responsive-12(8)
+		padding-left: 0
+		padding-right: 0
+		+media-960
+			+responsive-12(12)
+			padding: 15px 0 0 0
+		.section
+			+responsive-12(12)
+			background-color: $color-1
+			margin: 15px 0
+			font-size: 1em
+			
+			font-weight: 400
+			
+		
+		.img
+			@extend .section
+			overflow: hidden
+			
+			img
+				display: block
+				+border-radius(4px, 4px, 4px, 4px)
+				+transition(filter, 0.3s)
+				filter: sepia(60%)
+				&:hover
+					filter: sepia(0)
+					background-blend-mode: normal
+
+
+		.ingredients
+			@extend .section
+			span
+				+responsive-12(6)
+				padding: 5px 15px
+				position: relative
+				display: block
+				&:before
+					width: 10px
+					height: 10px
+					content: ""
+					background-color: $color-3
+					position: absolute
+					top: calc(50% - 5px)
+					left: 0px
+					+border-radius(2px, 2px, 2px, 2px)
+			
+		.preparation
+			@extend .section
+			font-size: 1.2em
+			line-height: 1.2em
+			span
+				display: block
+				width: 80%
+				height: 1px
+				background-color: $color-3
+				margin: 15px auto
+		.info
+			+responsive-12(12)
+			padding: 0 15px
+			background-color: $color-1
+			.stats
+				//+responsive-12(6)
+				width: 100%
+				float: left
+				+media-480
+					//+responsive-12(12)
+					padding: 0px
+				background-color: $color-1
+				color: $font-4
+				line-height: 1.5em
+				
+				span
+					color: $font-4	
+					font-weight: 500
+				a
+					color: $color-3
+					font-weight: 800
+					&:hover
+						color: $color-4
+				.recipe-stats
+					float: left
+					height: 80px
+				.likes	
+					height: 40px
+					
+					float: right
+					position: relative
+					margin-left: 15px
+					+media-480
+						
+					a
+						float: left
+						color: $color-3
+						padding: 15px
+						font-size: 1.2em
+						&.voted
+							color: $font-3
+
+						+media-480
+							float: left
+					.result
+						color: $font-4
+						height: 40px
+						padding: 12px 0 0 0
+						display: block
+						float: left
+						text-align: center
+						font-size: 1.2em
+						//border-bottom: 1px solid $color-3
+			.social
+				+responsive-12(6)
+				padding: 0
+				position: relative
+				+media-480
+					+responsive-12(12)
+				
+				height: 80px
+				
+						
+	.side-links
+		+responsive-12(4)
+		padding-right: 0
+		+media-960
+			+responsive-12(12)
+			padding: 15px 0
+			
+		.links
+			margin: 15px 0
+			+responsive-12(12)
+			background-color: $color-1
+			+media-960
+				padding-top: 0
+			+media-768
+				
+			+media-480
+				
+			.no-data
+				
+				+media-960
+					display: block
+					margin-top: 15px
+			.recipe-box
+				+responsive-12(12)
+				padding: 0
+				margin-bottom: 15px
+				position: relative
+				+transition(filter, 0.3s)
+				
+				
+				&:last-child
+					margin-bottom: 0
+
+				+media-960
+					+responsive-12(6)
+					padding: 0
+					margin: 15px 0 0 0
+
+				+media-768
+					+responsive-12(6)
+					padding: 0
+
+				+media-480
+					+responsive-12(12)
+					padding: 0
+					margin: 0
+
+				.img
+					+responsive-12(4)
+					padding: 0
+					position: relative
+					
+					+transition(filter, 0.3s)
+					filter: sepia(60%)
+					&:hover
+						filter: sepia(0)
+						background-blend-mode: normal
+					
+					+media-960
+						+responsive-12(4)
+						padding: 0
+					+media-480
+						+responsive-12(6)
+						padding-bottom: 0
+					img
+						display: block
+						height: auto
+						+border-radius(4px, 4px, 4px, 4px)
+				
+				
+			
+				.recipe-title
+					+responsive-12(8)
+					padding-top: 0
+					padding-bottom: 0
+					a
+						+transition(color, 0.3s)
+						color: $font-4
+						font-weight: 800
+						&:hover
+							color: $color-3
+					+media-960
+						padding: 0px 15px 0px 15px
+						a
+							font-size: 1em
+							
+
+					+media-768
+						padding: 5px 15px
+						a
+							font-size: 1em
+					
+					+media-640
+						padding: 0 15px
+					+media-480
+						+responsive-12(6)
+						padding-bottom: 5px
+						padding-top: 20px
+						padding-left: 0
+						a
+							font-size: 1em
+
+				.username
+					//position: absolute
+					+responsive-12(8)
+					padding-top: 0
+					padding-bottom: 0
+					color: $color-3
+					
+					+media-960
+						display: block
+						padding-top: 5px
+					+media-768
+						display: block
+						font-size: 0.8em
+						padding-top: 0px
+					+media-640
+						font-size: 0.8em
+						padding-top: 5px
+					+media-480
+						+responsive-12(6)
+						padding: 0
+						font-size: 1.2em
+					+media-380
+						font-size: 0.8em
+				
+				.views
+					@extend .username
+					font-size: 0.8em
+					color: $font-3
+					
+					+media-768
+						padding-top: 2px
+
+					+media-640
+						display: none
+					+media-480
+						display: block
+					+media-380
+						display: none
+						
+
+		.user-recipes
+			margin-bottom: 0
+
+
+	img
+		+scale(1, 1)
+		opacity: 1
+		+transition(all, 0.3s, ease-in-out)
+	img.active-animation
+		+scale(0.5, 0.5)
+		opacity: 0
+		+transition(all, 0.3s, ease-in-out)

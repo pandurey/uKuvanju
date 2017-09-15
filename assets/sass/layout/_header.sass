@@ -1,0 +1,687 @@
+.top-bar
+	width: 100%
+	background: $color-1
+	+border-radius(4px)
+	
+	.top-icon
+		text-align: center		
+		a
+			color: $font-4
+			font-size: 2em
+			+media-768
+				font-size: 2em
+			+media-480
+				font-size: 1.6em
+			+transition(color, 0.3s)
+			&:hover
+				color: $color-3
+	
+
+
+	.hamburger-menu
+
+		+responsive-12(1)
+		+media-960
+			+responsive-12(1)
+		+media-480
+			+responsive-12(2)
+
+	.adminpanel
+		+responsive-12(1)
+		+media-960
+			+responsive-12(1)
+		+media-480
+			+responsive-12(2)
+	
+	.questionnaire-link
+		+responsive-12(1,3)
+		+media-960
+			+responsive-12(1,2)
+		+media-480
+			+responsive-12(2)
+
+	.user-menu
+		+responsive-12(1)
+		+media-960
+			+responsive-12(1)
+		+media-480
+			+responsive-12(2)	
+
+	.logo 
+		+responsive-12(2,3)
+		padding-top: 10px
+		padding-bottom: 0
+		+media-960
+			+responsive-12(4, 2)
+			padding: 5px 0 0 0
+		+media-480
+			+responsive-12(4)
+			padding: 15px 0 0 0
+
+.sidebar
+	height: 100vh
+	width: 100%
+	background: $color-1
+	position: fixed
+	top: 0
+	z-index: 5
+	display: block
+	opacity: 0
+	-webkit-transition: opacity 0.3s, transform 0.5s ease-in-out
+	transition: opacity 0.3s, transform 0.5s ease-in-out
+	overflow: visible
+	
+	fieldset
+		border: 1px solid $font-3
+		border-bottom: 0
+		border-left: 0
+		border-right: 0
+		padding-bottom: 15px
+		+border-radius-a(4px)
+
+		legend
+			color: $font-4
+			font-size: 1.2em
+			padding: 15px
+
+		
+
+	&.active
+		+translate(0%, 0)
+		opacity: 1
+		-webkit-transition: opacity 0.3s, transform 0.3s ease-in-out
+		transition: opacity 0.3s, transform 0.3s ease-in-out
+	.title
+		+responsive-12(12)
+		font-size: 2em
+		text-align: center
+		color: $color-4
+
+	.logo
+		+responsive-12(6, 3)
+		padding: 0
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 2em
+		img
+			width: 80%
+	.close
+		position: absolute
+		right: 30px
+		a
+			font-size: 1.5em
+			color: $font-4
+			+transition(color, 0.3s)
+			&:hover
+				color: $color-3
+
+.side-bar-r
+	@extend .sidebar
+	width: calc(40% + 0px)
+	right: -30px
+	overflow-y: scroll
+	overflow-x: hidden
+	+translate(100%, 0)
+	+media-1170
+		width: 60%
+
+	+media-960
+		width: 70%
+	
+	+media-768
+		width: calc(100% + 22.5px)
+		right: -22.5px
+	+media-380
+		width: calc(100% + 22.4px)
+		right: -15px
+
+	.close
+		top: 25px
+
+	.user-container
+		+responsive-12(10, 1)
+		padding-left: 0
+		
+
+		+media-768
+			+responsive-12(8,2)
+		+media-640
+			+responsive-12(10,1)
+		+media-480
+			+responsive-12(12)
+		
+		.user-tabs
+			.errors
+				+responsive-12(12)
+				padding: 0 15px
+				color: $font-4
+				h5
+					color: $color-2
+					margin-bottom: 5px 
+				p
+					color: $font-4
+					padding: 0 0 10px 10px
+			.tabs
+				.btn 
+
+					-webkit-transition: background-color 0.2s ease-in-out, color 0.3s
+					transition: background-color 0.2s ease-in-out, color 0.3s
+					span
+						display: block
+			.tab
+				width: 100%
+				display: none
+				float: left	
+				&.active
+					display: block
+					
+				.tb
+					text-align: center
+					margin: 0px 0 0 15px
+					width: calc(100% - 45px)
+					+transition(border, 0.3s)
+					&:hover, &:focus, &.active
+						border-color: $color-3
+				.btn
+					text-align: center
+					color: $color-1
+					background: $color-3
+					border-width: 0px
+					margin: 15px 0 0 15px
+					width: calc(100% - 45px)
+					+transition(background, 0.3s)
+					&:hover
+						background: $font-3
+				.splitter
+					display: block
+					margin-top: 15px
+					color: $font-3
+					text-align: center
+					font-size: 1.5em
+
+		.user-box
+			
+			.tabs
+				position: relative
+				.btn
+					width: calc(16.66%)
+					float: left
+					font-size: 1.5em
+					text-align: center
+					background-color: $color-1
+					color: $font-4
+					+transition(background-color, 0.3s)
+					&:nth-child(1)
+						//+responsive-12(2,3)
+						margin-left: calc(25% + 2px)
+
+					&:nth-child(2)
+						//+responsive-12(2)
+
+					&:nth-child(3)
+						//+responsive-12(2)
+					&.active, &.active:hover
+						background-color: $color-1
+						color: $color-3
+					&:hover
+						background-color: #dedcd7
+			.tab
+				
+				.user-picture-box
+					+responsive-12(12)
+					
+					.user-img
+						+border-radius(100%, 100%, 100%, 100%)
+						overflow: hidden
+						height: 100px
+						width: 100px
+						background: $color-bg
+						margin: 0 auto
+								
+				.username-box
+					+responsive-12(12)
+					padding: 0
+					text-align: center
+					font-size: 1.5em
+					font-weight: 800
+					color: $font-4
+				.search-box
+					+responsive-12(12)
+					position: relative
+					span
+						font-size: 1.5em
+						position: absolute
+						bottom: 30px
+						right: 45px
+						display: block
+						color: $font-4
+					.tb
+						width: calc(100% - 15px)
+						float: left
+						font-size: 1em
+						text-align: left
+						color: $color-4
+						border-color: $color-3
+						+border-radius(4px,0 , 0px, 4px)
+						margin: 15px 0 0 0px
+						position: relative
+						&:hover
+							border-color: $font-3
+						&::after
+							position: absolute
+							right: 0px
+							left: 0px
+							content: ""
+							width: 30px
+							height: 30px
+							background-color: $color-3
+				.search-pagination
+					+responsive-12(12)
+					padding: 0 15px
+					width: calc(100% - 15px)
+					
+					a
+						color: $font-4
+						width: 30px
+						height: 30px
+						display: block
+						line-height: 30px
+						border-bottom: 1px solid $font-3
+						float: left
+						text-align: center
+						margin-right: 5px
+						cursor: pointer
+						+border-radius-a(0px)
+						&:hover
+							
+				
+						&.jp-current
+							border-bottom: 1px solid $color-3
+							color: #000
+							&:hover
+								border-color: $color-3
+				.search-result
+					+responsive-12(12)
+					width: calc(100% - 15px)
+					text-align: center
+
+					.recipe-box
+						+responsive-12(6)
+						padding: 15px 7.5px
+						position: relative
+						margin-bottom: 30px
+						+transition(filter, 0.3s)
+						filter: sepia(80%)
+						&:hover
+							filter: sepia(0)
+						
+						.recipe-img
+							+border-radius-a(4px)
+							float: left
+							height: 100px
+							position: relative
+							overflow: hidden
+							font-weight: 800
+							width: 100%
+							img
+								width: 100%
+								height: 100px
+								
+							
+						.link
+							display: block
+							background: rgba(0,0,0,0.4)
+							position: absolute
+							top: 0px
+							left: 0px
+							padding: 0 15px
+							width: 100%
+							height: 100%
+							text-align: center
+							a
+								padding: 10px 0
+								display: block
+								color: $color-1
+								&:hover
+									color: $color-3
+
+
+			#user-info
+				
+
+			#user-edit
+
+				span
+					padding: 15px 16px
+					display: block
+					text-align: left
+				.btn
+					
+
+				.tb
+					&:hover, &:focus, &.active
+						border-color: $color-3
+
+				.passCon
+					display: none
+				.user-picture-box
+					+responsive-12(12)
+					padding: 15px 15px
+					height: 185px
+					
+					.img-icon
+						width: 150px
+						height: 150px
+						color: $font-4
+						float: left
+						border: 0px solid $font-4
+						+border-radius-a(4px)
+						text-align: center
+						background: $color-1
+						background-size: cover
+					.fileUpload
+						float: left
+						padding: 0
+						margin-top: 0
+						position: relative
+						height: 150px
+						width: calc(100% - 200px)
+						span
+							width: 100%
+							padding: 15px
+							margin-left: 30px
+							margin-top: 45px
+							background: $color-3
+							
+							color: $color-1
+							display: block
+							text-align: center
+							+border-radius-a(4px)
+							+transition(background, 0.3s, ease-in-out)
+							&.active
+								background: $font-3
+								
+							&:hover
+								background: $color-2
+								border: 0px solid $color-3
+
+						input.upload
+
+							position: absolute
+							top: 45px
+							left: -20%
+							margin: 0
+							padding: 15px
+							cursor: pointer
+							opacity: 0
+
+		.user-login
+			font-weight: 500
+			.tabs
+				.btn
+					background-color: $color-1
+					color: $font-4
+					border-bottom: 0px solid $color-3
+					&:nth-child(1)
+						+responsive-12(4,2)
+						+border-radius(4px, 0, 0, 4px)
+					&:nth-child(2)
+						+responsive-12(4,0)
+						+border-radius(0, 4px, 4px, 0)
+					&.active, &.active:hover
+						background-color: $color-1
+						
+						color: $color-3
+					&:hover
+						background-color: #dedcd7	
+
+			.tab 
+				.btn
+					
+				.tb
+					margin-bottom: 15px	
+					
+				input.err
+					border: 1px solid #e74c3c
+			#sign-in.tab
+				//display: none
+
+			#register.tab
+				padding: 0px
+			.logo	
+				padding: 15px 0 0 0
+
+.sidebar-wrap
+	
+	position: relative
+	overflow-y: scroll
+
+.side-bar-l
+	@extend .sidebar
+	width: 30%
+	height: 1300px
+	left: 0
+	overflow-x: hidden
+	overflow-y: hidden
+	
+	+right-dropshadow
+	+translate(-100%, 0)
+	+media-960
+		width: 50%
+	+media-640
+		width: 70%
+	+media-480
+		width: 100%
+	
+	
+	.close
+		top: 15px
+		right: 15px
+
+	.title 
+		//padding-top: 45px
+		padding: 10px 0 0 0 
+		color: $color-3
+	.nav
+		+responsive-12(12)
+
+		li
+			+translate(-50%,0)
+			opacity: 0
+			-webkit-transition: opacity 0.3s, transform 0.5s ease-in-out
+			transition: opacity 0.3s, transform 0.5s ease-in-out
+			&.active
+				opacity: 1
+				+translate(0, 0)
+			position: relative
+			a
+				text-align: center
+				width: 100%
+				display: block
+				color: $font-4
+				font-size: 1.3em
+				font-weight: 500
+				padding: 5px 0
+				+transition(color, 0.3s)
+				&:hover
+					color: $color-3
+			
+			ul
+				display: block
+				li a
+					
+					font-size: 1em
+	
+	.social-box
+		+responsive-12(6,3)
+		height: 90px
+		background-color: $color-1
+
+		a
+			color: $font-3
+			display: block
+			float: left
+			width: 25%
+			opacity: 0
+			text-align: center
+			+scale(0,0)
+			-webkit-transition: opacity 0.3s, color 0.5s ease-in-out, transform 0.3s
+			transition: opacity 0.3s, color 0.5s ease-in-out, transform 0.3s
+			&:hover
+				color: $color-3
+			&.active
+				+scale(1,1)
+				opacity: 1
+
+.fixed-bar
+	width: 90%
+	margin-top: 10px
+	background: $color-1
+	position: fixed
+	top: 10px
+	left: 0
+	right: 0
+	margin: 0 auto
+
+
+			
+	
+.questionnaire
+	width: 30%
+	height: 100%
+	position: fixed
+	right: 0
+	bottom: 0px
+	background: $color-1
+	opacity: 0
+	padding: 15px
+	+translate(100%, 0)
+	-webkit-transition: opacity 0.3s, transform 0.5s ease-in-out
+	transition: opacity 0.3s, transform 0.5s ease-in-out
+	+media-768
+		width: 60%
+	+media-480
+		width: 100%
+	&.active
+		+translate(0%, 0)
+		opacity: 1
+		-webkit-transition: opacity 0.3s, transform 0.3s ease-in-out
+		transition: opacity 0.3s, transform 0.3s ease-in-out
+	
+	.wrap 
+		position: relative
+		padding-top: 30px
+		height: 100%
+		overflow-x: hidden
+
+		span.question
+			line-height: 1.5em
+
+		.questions
+			width: 100%
+			padding-top: 15px
+			
+			
+			.question
+				width: 100%
+				height: 100%
+
+			span
+				display: block
+				height: 30px
+				margin-left: 15px
+				margin-bottom: 5px
+			label
+				cursor: pointer
+				display: block
+				position: relative
+				font-size: 0.6em
+				
+				&:before
+					width: 30px
+					height: 30px
+					font: normal normal normal 14px/1 FontAwesome
+					content: "\f00c"
+					padding: 5px 5px
+					color: $color-1
+					border: 1px solid $color-3
+					+border-radius-a(4px)
+					margin-right: 5px
+				&.check
+					
+					&:before
+						content: "\f00c"
+						color: $font-4
+
+			.btn
+				margin: 10px auto 0 auto
+				background: $color-1
+				color: $color-0
+				border: 1px solid $color-3
+				width: calc(100% - 30px)
+				+transition(border, 0.3s) 
+				&:hover
+					border-color: #e8e8e8
+			
+			.results
+				width: 100%
+				height: 30px
+				margin-top: 15px
+				opacity: 0
+
+				+translate(-40%, 0)
+				-webkit-transition: opacity 0.3s, transform 0.5s ease-in-out
+				transition: opacity 0.3s, transform 0.5s ease-in-out
+				&.active
+					+translate(0%, 0)
+					opacity: 1
+					-webkit-transition: opacity 0.5s, transform 0.5s ease-in-out
+					transition: opacity 0.5s, transform 0.5s ease-in-out
+
+				.result-percent
+					width: 100%
+					height: 30px
+					background: #e8e8e8
+					position: relative
+					text-align: center
+					line-height: 30px
+					+border-radius-a(2px)
+					overflow: hidden
+					.percent-width
+						height: 30px
+						position: absolute
+						left: 0
+						top: 0
+						background: $color-3
+						z-index: 1
+						opacity: 0
+						+translate(-40%, 0)
+						-webkit-transition: opacity 0.3s, transform 0.5s ease-in-out
+						transition: opacity 0.3s, transform 0.5s ease-in-out
+						&.active
+							opacity: 1
+							+translate(0%, 0)
+
+					span 
+						z-index: 2
+						font-size: 0.8em
+						display: block
+						position: relative
+
+	.close-questionnaire
+		position: absolute
+		right: 0px
+		top: 0
+		a
+			font-size: 1.5em
+			color: $font-4
+			+transition(color, 0.3s)
+			&:hover
+				color: $color-3
+
+	span
+		font-size: 1.5em
+
+
+

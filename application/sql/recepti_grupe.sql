@@ -1,0 +1,1 @@
+CREATE TABLE `db_ukuvanju`.`recepti_grupe` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `id_recept` INT(11) NOT NULL , `id_kategorija` INT(11) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;

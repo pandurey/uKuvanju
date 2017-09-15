@@ -1,0 +1,98 @@
+.preloader
+	width: 100%
+	height: 100vh
+	background: $color-1
+	position: fixed
+	z-index: 10
+	text-align: center
+
+
+	.preloader-img
+		+responsive-12(6,3)
+		margin-top: 30vh
+		+media-1170
+			+responsive-12(8,2)
+		+media-768
+			+responsive-12(10,1)
+		+media-480
+			+responsive-12(12)
+
+#tesiranje
+	viebox: 0 0 100 100
+	
+#u
+	fill: $color-1
+	stroke: $color-1
+	stroke-dasharray: 30
+	stroke-dashoffset: 0
+	stroke-width: 1
+	animation: dash 5s ease 20 normal forwards, opacity 1s linear 0s 1 normal forwards, bg-color-3 1.5s linear 0.5s 1 normal forwards
+
+
+#com
+	fill: $color-1
+	stroke: $color-1
+	stroke-dasharray: 30
+	stroke-dashoffset: 0
+	animation: dash 5s ease 20 normal forwards, opacity 1s linear 0s 1 normal forwards, bg-color-3 1.5s linear 0.5s 1 normal forwards
+	
+#kuvanju
+	fill: #fff
+	opacity: 1
+	stroke: $color-3
+	stroke-dasharray: 30
+	stroke-dashoffset: 0
+	stroke-width: 1
+	stroke-linecap: round
+	animation: dash 5s linear 20 normal forwards, bg-color-4 1s linear 0.5s 1 normal forwards, opacity 1s linear 0s 1 normal forwards, scale 1s linear 0s 1 normal forwards
+	//animation-direction: forward
+
+
+@keyframes dash
+	0%
+		stroke-dashoffset: 380
+	100%
+		stroke-dashoffset: 0 
+
+@keyframes opacity
+	0%	
+		opacity: 0
+	100%
+		opacity: 1
+
+@keyframes scale
+	0%	
+		+scale(1, 1)
+	100%
+		+scale(1, 1)
+
+@keyframes scale-u
+	0%	
+		+translate(-400%, 0)
+	100%
+		+translate(0%, 0)
+
+@keyframes scale-com
+	0%	
+		+translate(200%, 0)
+	100%
+		+translate(0%, 0)
+
+
+
+@keyframes bg-color-4
+	0%
+		fill: #fff
+	100%
+		fill: $color-3
+
+@keyframes bg-color-3
+	0%	
+		stroke: $color-1
+		fill: #fff
+	100%
+		stroke: $color-0
+		fill: $color-0
+
+
+//dve animacije, napravi dva div, parent/child

@@ -1,0 +1,1 @@
+SELECT r.id, r.naziv, likes, dislikes, (likes - dislikes) as rating, k.naziv, r.pregledi FROM recepti r INNER JOIN recepti_kategorije rk ON r.id = rk.id_recept INNER JOIN users u ON u.id = r.id_user INNER JOIN kategorija k ON k.id_kategorije = rk.id_kategorija ORDER BY pregledi DESC

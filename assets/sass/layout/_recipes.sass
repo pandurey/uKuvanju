@@ -1,0 +1,315 @@
+.clear 
+	clear: both
+.recipes
+	
+	.title
+		+responsive-12(12)
+		background: $color-1
+		text-align: center
+		+border-radius(4px, 4px, 4px, 4px)
+		span
+			font-size: 2em
+	
+	.container
+		width: 100%
+		+flex
+		position: relative
+		padding-top: 15px
+		background: $color-1
+
+
+	.no-data
+		+responsive-12(12)
+		background-color: $color-1
+		margin-bottom: 15px
+		text-align: center
+		font-weight: 800
+		font-size: 1.2em
+		+media-640
+			font-size: 1em
+
+	.popular
+		@extend .container
+		
+		.food-item-box-l
+			
+			height: 405px
+			+border-radius-a(10px)
+			&:nth-child(4)
+				display: block
+				+media-960
+					display: block
+
+			.food-text-block
+				width: 100%
+				height: 55%
+				position: relative
+				z-index: 2
+				border: 1px solid #e8e8e8
+				border-bottom: 0
+				a
+					+transition(color, 0.3s, ease-out)
+				.category
+					width: 100%
+					text-align: center
+					font-size: 1.5em
+					padding: 15px
+					color: $color-0
+						
+				.title
+					width: 100%
+					text-align: center
+					font-size: 1.7em
+					line-height: 1em
+					
+					background: none
+					a
+						color: $color-3
+						font-weight: 800
+						&:hover
+							color: $color-0
+
+				.uploader
+					@extend .category
+					position: absolute
+					bottom: 0px
+					font-size: 1em
+					a
+						color: #000
+						&:hover
+							color: $color-3
+				.uploader-img
+					position: absolute
+					bottom: -30px
+					left: 0
+					right: 0
+					width: 60px
+					height: 60px
+					margin: 0 auto
+					+border-radius-a(50%)
+					border: 0px solid #fff
+					overflow: hidden
+			
+			&:nth-child(odd)
+				.food-img
+					background-color: $color-3
+			&:nth-child(even)
+				.food-img
+					background-color: $color-3
+			.food-img
+				width: 100%
+				height: 45%
+				position: relative
+				background-size: cover
+				overflow: hidden
+				//background-blend-mode: multiply
+				+transition(filter, 0.3s)
+				&.bg-filter
+					filter: sepia(60%)
+					&:hover
+						filter: sepia(0)
+						background-blend-mode: normal
+				&:after
+					width: 100%
+					height: 10px
+					position: absolute
+					bottom: -10px
+					left: 0
+					background-color: rgba(245,183,85, 0.8)
+					content: ""
+					+transition(bottom, 0.2s, ease-in-out)
+				&:hover:after
+					bottom: 0
+					+transition(bottom, 0.2s, ease-in-out)
+				span.views
+					padding: 5px 15px
+					position: absolute
+					bottom: 15px
+					left: 5px
+					background-color: rgba(255, 255, 255, 1)
+					color: $font-4
+					font-weight: 500
+					+border-radius-a(4px)
+					span
+						padding-right: 5px
+						color: $color-3
+				span.likes
+					padding: 5px 15px
+					position: absolute
+					bottom: 15px
+					right: 5px
+					background-color: rgba(255, 255, 255, 1)
+					+border-radius-a(4px)
+					span 
+						padding: 0 5px
+						cursor: default
+						color: $color-3
+
+
+	.latest
+		@extend .container
+		
+		.food-item-box-s
+			height: 160px
+			position: relative
+			overflow: hidden
+			
+			+border-radius-a(4px)
+			padding: 5px 7.5px
+			
+			+media-1360
+				
+			+media-1170
+				&:nth-child(6)
+					display: block
+
+			&:nth-child(even)
+				.food-img
+					background-color: $color-2
+			&:nth-child(odd)
+				.food-img
+					background-color: $color-3
+			
+			&:hover .food-img
+				
+
+			.food-img
+				width: 100%
+				height: 60%
+				background-size: cover
+				position: relative
+				overflow: hidden
+
+				+transition(filter, 0.3s)
+				&.bg-filter
+					filter: sepia(60%)
+					&:hover
+						
+						filter: sepia(0)
+						background-blend-mode: normal
+				
+				//background-blend-mode: multiply
+				&:after
+					width: 100%
+					height: 10px
+					position: absolute
+					top: -10px
+					left: 0
+					background-color: rgba(245,183,85, 0.8)
+					
+					content: ""
+					+transition(top, 0.2s, ease-in-out)
+				&:hover:after
+					top: 0
+					+transition(top, 0.2s, ease-in-out)
+
+			.food-text-block
+				width: 100%
+				height: 40%
+				background-color: $color-1
+				
+
+				.title
+					background: none
+					width: 100%
+					font-size: 1em
+					padding: 10px 5px 5px 5px
+					font-size: 1em
+					text-align: center
+					min-height: 80px
+					+media-1170
+						font-size: 1.5em
+					+media-960
+						font-size: 1.2em
+					+media-480
+						font-size: 1em
+					a
+						color: $color-0
+						font-weight: 800
+						+transition(color, 0.3s, ease)
+						&:hover
+							color: $color-3
+
+				.details
+					width: 100%
+					font-weight: 500
+					
+					.views
+						position: absolute
+						left: 10px
+						bottom: 15px
+						font-size: 1em
+						color: $font-4
+						background-color: rgba(255,255,255,1)
+						
+						padding-right: 10px
+						+border-radius-a(4px)
+						z-index: 2
+						span 
+							color: $color-3
+							padding: 5px 10px
+							padding-right: 5px
+					.uploader
+						position: absolute
+						right: 10px
+						bottom: 15px
+						color: $font-1
+						z-index: 2
+						a 
+							color: $font-4
+							+border-radius-a(4px)
+							padding: 5px 10px
+							background-color: rgba(255,255,255,1)
+							font-size: 1em
+							font-weight: 500
+							+transition(color, 0.3s, ease-out )
+							+media-480
+								font-size: 0.8em
+							&:hover
+								color: $color-3
+
+.food-item-box-l
+	//margin: 0 7.5px 15px 7.5px
+	//flex: 0 1 calc(25% - 15px)
+	+responsive-12(3)
+	+border-radius-a(4px)
+	overflow: hidden
+	background: $color-1
+	opacity: 1
+	+scale(1, 1)
+	//+media-1360
+		//flex: 0 1 calc(33% - 15px)
+	+media-1170
+		//flex: 0 1 calc(50% - 15px)
+		+responsive-12(6)
+	+media-640
+		//flex: 0 1 calc(100% - 15px)
+		+responsive-12(12)
+	+transition(all, 0.3s, ease-in-out)
+	&.active
+		+transition(all, 0.3s, ease-in-out)
+		+scale(0.5,0.5)
+		opacity: 0
+	
+
+.food-item-box-s
+	//margin: 0 7.5px 15px 7.5px
+	//flex: 0 1 calc(20% - 15px)
+	+responsive-12(2)
+	+border-radius-a(4px)
+	+scale(1, 1)
+	opacity: 1
+	+transition(all, 0.3s, ease)
+	&.active
+		+scale(0.5,0.5)
+		+transition(all, 0.3s, ease)
+		opacity: 0
+	+media-1170
+		//flex: 0 1 calc(33% - 15px)
+		+responsive-12(4)
+	+media-640
+		//flex: 0 1 calc(50% - 15px)
+		+responsive-12(6)
+	
+
+

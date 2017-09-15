@@ -1,0 +1,155 @@
+=media-380 
+	@media only screen and (max-width: 380px)
+		@content
+
+=media-480
+	@media screen and (max-width: 480px)
+		@content
+
+=media-640
+	@media screen and (max-width: 640px)
+		@content
+
+=media-768
+	@media only screen and (max-width: 768px)
+		@content
+
+=media-860
+	@media only screen and (max-width: 860px)
+		@content
+
+=media-960
+	@media only screen and (max-width: 960px)
+		@content
+
+=media-1170
+	@media only screen and (max-width: 1170px)
+		@content
+
+=media-1360
+	@media only screen and (max-width: 1360px)
+		@content
+
+=media-max
+	@media only screen and (min-width: 1361px)
+		@content
+
+=responsive-12($width, $offset:0)
+	width: 100% / 12 * $width
+	margin-left: 100% / 12 * $offset
+	float: left
+	padding: 15px
+
+=border-radius($t: 0, $r:0, $b: 0, $l: 0)
+	-webkit-border-radius: $t $r $b $l
+	-ms-border-radius:     $t $r $b $l
+	border-radius:         $t $r $b $l
+=border-radius-a($a: 0)
+	-webkit-border-radius: $a
+	-ms-border-radius:     $a
+	border-radius:         $a
+
+=add-border-div($direction, $color)
+	content: ""
+	height: 100%
+	width: 15px
+	  
+	position: absolute
+	@if $direction == 'left'
+		left: -15px
+	@else
+		right: -15px
+	top: 0
+	background: $color
+
+=translate($x, $y)
+	-ms-transform: translate($x, $y)
+	-webkit-transform: translate($x, $y)
+	transform: translate($x, $y)
+	//+transition(transform, 0.5s, ease-in-out)
+
+=scale($x, $y)
+	-ms-transform: scale($x, $y)
+	-webkit-transform: scale($x, $y)
+	transform: scale($x, $y)
+
+=transition($prop, $sec, $func : ease)
+	-webkit-transition: $prop $sec $func
+	transition: $prop $sec $func
+
+=multiple-transition($a, $b)
+	-webkit-transition: $a, $b
+	transition: $a, $b
+	
+=flex
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	flex-wrap: wrap
+
+=right-dropshadow
+	-webkit-box-shadow: 3px 0px 10px -4px rgba(0,0,0,0.3)
+	-moz-box-shadow: 3px 0px 10px -4px rgba(0,0,0,0.3)
+	box-shadow: 3px 0px 10px -4px rgba(0,0,0,0.3)
+
+=left-dropshadow
+	-webkit-box-shadow: -3px 0px 10px -4px rgba(0,0,0,0.3)
+	-moz-box-shadow: -3px 0px 10px -4px rgba(0,0,0,0.3)
+	box-shadow: -3px 0px 10px -4px rgba(0,0,0,0.3)
+
+
+=gradient-v-y
+	background: #331b4d 
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%,  rgba(245, 183, 85, 0.5) 100%)
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(245, 183, 85, 0.5) 100%)
+	background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(245, 183, 85, 0.5) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#331b4d', endColorstr='#f5b755',GradientType=0 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=bg-cover
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+=rose-gradient-bg
+	background: #fe2552
+	background: -moz-linear-gradient(left, #fe7e7f 0%, #fe2552 100%)
+	background: -webkit-linear-gradient(left, #fe7e7f 0%,#fe2552 100%)
+	background: linear-gradient(to right, #fe7e7f 0%,#fe2552 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe7e7f', endColorstr='#fe2552',GradientType=1 )
+
+=blue-green
+	background: #2980b9
+	background: -moz-linear-gradient(left, #2980b9 0%, #3498db 33%, #2980b9 66%, #27ae60 66%, #27ae60 66%, #2ecc71 100%)
+	background: -webkit-linear-gradient(left, #2980b9 0%,#3498db 33%,#2980b9 66%,#27ae60 66%,#27ae60 66%,#2ecc71 100%)
+	background: linear-gradient(to right, #2980b9 0%,#3498db 33%,#2980b9 66%,#27ae60 66%,#27ae60 66%,#2ecc71 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2980b9', endColorstr='#27ae60',GradientType=1 )
+
+=header-bg
+	background: #2980b9
+	background: -moz-linear-gradient(left, #2980b9 0%, #3498db 33%, #3498db 66%, #27ae60 66%, #0e83cd 66%, #0e83cd 100%)
+	background: -webkit-linear-gradient(left, #2980b9 0%,#3498db 33%,#3498db 66%,#27ae60 66%,#0e83cd 66%,#0e83cd 100%)
+	background: linear-gradient(to right, #2980b9 0%,#3498db 33%,#3498db 66%,#27ae60 66%,#0e83cd 66%,#0e83cd 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2980b9', endColorstr='#27ae60',GradientType=1 )

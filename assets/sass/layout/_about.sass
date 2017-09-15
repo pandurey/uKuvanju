@@ -1,0 +1,41 @@
+.about
+	width: 100%
+	background: $color-1
+
+	.about-section
+		text-align: center
+		background: $color-1
+	.author-img
+		@extend .about-section
+		+responsive-12(2,5)
+		+media-960
+			+responsive-12(4,4)
+		+media-480
+			+responsive-12(6, 3)
+		img
+			+border-radius-a(50%)
+	.author-name
+		@extend .about-section
+		+responsive-12(12)
+		
+			
+		h4
+			font-weight: 800
+			+media-480
+				font-size: 1.2em
+		a 
+			color: $font-3
+			+transition(color, 0.3s)
+			&:hover
+				color: $color-3
+
+	.author-desc
+		@extend .about-section
+		+responsive-12(4,4)
+		+media-960
+			+responsive-12(6,3)
+		+media-480
+			+responsive-12(8, 2)
+		span
+			color: $color-3
+			font-weight: 800

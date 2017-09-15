@@ -1,0 +1,81 @@
+.footer
+	clear: both
+	width: 100%
+	background: $color-1
+	+border-radius(4px, 4px, 4px, 4px)
+	.logo
+		+responsive-12(12)
+		padding: 15px 0 0 0
+		.logo-img
+			+responsive-12(4, 4)
+			display: flex
+			justify-content: center
+			align-items: center
+			+media-640
+				+responsive-12(6,3)
+			img
+				width: 60%
+
+	.links-wrap
+		+responsive-12(12)
+		padding: 0
+			
+		.links
+			width: 100%
+			float: left
+			overflow: hidden
+			position: relative
+			padding: 5px
+			
+			ul
+				float: left
+				position: relative
+				left: 50%
+				text-align: center
+				li
+					display: block
+					float: left
+					position: relative
+					right: 50%
+
+					border-right: 1px solid $font-3
+					&:last-child
+						border-right: 0
+					a
+						display: block
+						padding: 5px
+						color: $font-4
+						margin: 0
+						font-size: 1em
+						font-weight: 500
+						line-height: 1em
+						+transition(color, 0.3s, ease-out)
+						&:hover
+							color: $color-3
+		
+		#main-links a
+			font-size: 1em
+		+media-640
+			#category-links li
+				border: 0
+
+			#category-links a
+				font-size: 0.8em
+				margin: 0
+		+media-480
+			#category-links a
+				text-align: center
+				
+
+	.designed
+		+responsive-12(12)
+		text-align: center
+		font-size: 0.8em
+		color: $font-1
+
+
+
+
+
+	
+	

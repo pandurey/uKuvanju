@@ -1,0 +1,231 @@
+.user-wrap
+	width: 100%
+	.user-info
+		width: 100%
+		position: relative
+		float: left
+		.user-bg
+			width: 100%
+			height: calc(100%)
+			position: absolute
+			top: 0
+			left: 0
+			z-index: 0
+			overflow: hidden
+			background: url('../img/user_bg.jpg')
+			background-size: cover
+			+border-radius-a(4px)
+			
+		.user-img
+			position: relative
+			width: 300px
+			height: 300px
+			
+			margin: 15px auto
+			+border-radius-a(50%)
+			overflow: hidden
+			
+			z-index: 2
+			img
+				+border-radius-a(100%)
+				opacity: 0
+				z-index: 6
+
+				&.active-animation
+					animation: loadimg 0.5s ease 0.5s 1 normal forwards 
+		
+		.user-text
+			+responsive-12(12)
+			text-align: center
+			clear: both
+			z-index: 2
+			position: relative
+			opacity: 0
+			animation: loadimg 1s ease 0s 1 normal forwards 
+			h1
+				font-weight: 500
+				font-size: 2em
+				font
+	.title
+		+responsive-12(12)
+		font-size: 2em
+		text-align: center
+		margin: 15px 0 0 0
+		font-weight: 300
+		span 
+			border-bottom: 1px solid $color-3
+			font-family: 'dosis'
+
+	.user-recipes-wrap
+		+responsive-12(12)
+		padding: 0
+	
+		.recipe-wrap
+			+responsive-12(3)
+			padding: 15px
+			position: relative
+			animation: loadimg 1s ease 0s 1 normal forwards
+			+transition(filter, 0.5s, ease-in-out)
+			&.bg-filter
+				filter: sepia(60%)
+				&:hover
+					filter: sepia(0)
+			+media-1170
+				+responsive-12(4)
+				padding: 15px
+
+			+media-768
+				+responsive-12(6)
+			+media-480
+				+responsive-12(12)
+				padding: 15px 0
+
+			.recipe-img
+				+responsive-12(12)
+				+border-radius-a(6px)
+				overflow: hidden
+				padding: 0
+				
+				+media-960
+					+responsive-12(12)
+					padding: 0
+				+media-640
+					+responsive-12(12)
+					padding: 0
+				+media-480
+					+responsive-12(12)
+					padding: 0
+				&.hover
+					&:after
+					width: 100%
+					position: absolute
+					bottom: 0
+					height: 5px
+				img 
+					display: block
+					//min-height: 160px
+				
+			.recipe-info
+				width: calc(100% - 30px)
+				height: calc(100% - 30px)
+				padding: 0 15px
+				+border-radius-a(6px)
+				position: absolute
+				top: 15px
+				left: 15px
+				text-align: center
+				background: rgba(0, 0, 0, 0.6)
+				color: #fff
+				
+				
+				+media-480
+					+responsive-12(12)
+					
+					left: 0
+					padding: 15px 0
+				a
+					color: $color-3
+					font-weight: 800
+					+transition(color, 0.3s)
+					&:hover
+						color: $color-3
+				.fa
+					color: $color-3
+					padding: 0 5px
+				.name
+					font-size: 1.5em
+					font-weight: 800
+					padding: 30px 0 15px 0
+					a
+						display: block
+						min-height: 60px
+					+media-960
+						font-size: 1.2em
+						padding: 15px 0 15px 0
+						a
+							min-height: 42px
+					+media-640
+						padding: 15px
+						font-size: 1em
+					+media-480
+						padding: 15px 10px
+						font-size: 1.5em
+						a
+							min-height: 60px
+				
+				.info
+					font-size: 1em
+					+media-640
+						font-size: 0.8em
+					+media-480
+						font-size: 1em
+					+media-640
+						padding: 5px
+
+				.rating
+					@extend .info
+					position: absolute
+					bottom: 15px
+					right: 15px
+					+media-640
+						padding: 0
+	
+					.fa-thumbs-down
+						+scale(-1, 1)
+				.user
+					@extend .info
+					
+
+				.date
+					@extend .info
+					padding: 5px 0
+					+media-640
+						padding: 0
+
+				.category
+					@extend .info
+					color: $color-1
+
+				.views
+					@extend .info
+					padding: 0
+					position: absolute
+					bottom: 15px
+					left: 15px
+
+#purple
+	opacity: 0	
+	fill: $color-3
+	animation:  animate-purple 0.5s linear 0s 1 normal forwards
+
+#orange
+	opacity: 0
+	animation:  animate-orange 0.5s linear 0s 1 normal forwards
+#user
+	fill: $color-4
+	opacity: 0
+	animation:  animate-user 0.5s linear 0s 1 normal forwards
+
+@keyframes animate-purple
+	0%	
+		+scale(0, 1)
+		opacity: 0
+	100%
+		+scale(1, 1)
+		opacity: 1
+
+@keyframes animate-orange
+	0%	
+		+translate(10%, 20%)
+		opacity: 0
+	100%
+		+translate(100%, 0)
+		opacity: 1
+
+@keyframes animate-user
+	0%	
+		+translate(300%, 0%)
+		opacity: 0
+	100%
+		+translate(220%, 0)
+		opacity: 1
