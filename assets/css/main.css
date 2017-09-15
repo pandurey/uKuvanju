@@ -2199,7 +2199,7 @@ select {
   margin-left: 0%;
   float: left;
   padding: 15px;
-  background: #fdc14c;
+  background: white;
   text-align: center;
   -webkit-border-radius: 4px 4px 4px 4px;
   -ms-border-radius: 4px 4px 4px 4px;
@@ -3559,6 +3559,36 @@ select {
     transform: translate(220%, 0);
     opacity: 1;
   }
+}
+
+/* line 237, ../sass/layout/_user.sass */
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+/* line 243, ../sass/layout/_user.sass */
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+/* line 249, ../sass/layout/_user.sass */
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: scale(1);
+}
+/* line 253, ../sass/layout/_user.sass */
+.mfp-zoom-in.mfp-bg {
+  opacity: 0.8;
+}
+/* line 259, ../sass/layout/_user.sass */
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  transform: scale(0.8);
+  opacity: 0;
+}
+/* line 263, ../sass/layout/_user.sass */
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
 }
 
 /* line 1, ../sass/layout/_recipesbrowse.sass */

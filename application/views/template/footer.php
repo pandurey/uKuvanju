@@ -77,6 +77,8 @@
 	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url('assets/js/slick.js')?>"></script>
 	
+	<!-- Magnific pop-up-->
+	<script type="text/javascript" src="<?php echo base_url('assets/plugins/magnific_popup/jquery.magnific-popup.min.js')?>"></script>
 	
 	<!-- Javacript -->
 	<script type="text/javascript" src="<?php echo base_url('assets/js/ajax.js');?>"></script>

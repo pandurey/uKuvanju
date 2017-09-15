@@ -11,6 +11,9 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/animate.css');?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/main.css');?>">
 
+	<!-- Magnific pop-up-->
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/magnific_popup/magnific-popup.css');?>">
+
 	<!-- jQuery -->
 	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
