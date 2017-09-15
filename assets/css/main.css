@@ -3169,13 +3169,12 @@ select {
   left: 0;
   z-index: 0;
   overflow: hidden;
-  background: url("../img/user_bg.jpg");
   background-size: cover;
   -webkit-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 19, ../sass/layout/_user.sass */
+/* line 18, ../sass/layout/_user.sass */
 .user-wrap .user-info .user-img {
   position: relative;
   width: 300px;
@@ -3187,7 +3186,7 @@ select {
   overflow: hidden;
   z-index: 2;
 }
-/* line 29, ../sass/layout/_user.sass */
+/* line 28, ../sass/layout/_user.sass */
 .user-wrap .user-info .user-img img {
   -webkit-border-radius: 100%;
   -ms-border-radius: 100%;
@@ -3195,11 +3194,11 @@ select {
   opacity: 0;
   z-index: 6;
 }
-/* line 34, ../sass/layout/_user.sass */
+/* line 33, ../sass/layout/_user.sass */
 .user-wrap .user-info .user-img img.active-animation {
   animation: loadimg 0.5s ease 0.5s 1 normal forwards;
 }
-/* line 37, ../sass/layout/_user.sass */
+/* line 36, ../sass/layout/_user.sass */
 .user-wrap .user-info .user-text {
   width: 100%;
   margin-left: 0%;
@@ -3212,12 +3211,12 @@ select {
   opacity: 0;
   animation: loadimg 1s ease 0s 1 normal forwards;
 }
-/* line 45, ../sass/layout/_user.sass */
+/* line 44, ../sass/layout/_user.sass */
 .user-wrap .user-info .user-text h1 {
   font-weight: 500;
   font-size: 2em;
 }
-/* line 49, ../sass/layout/_user.sass */
+/* line 48, ../sass/layout/_user.sass */
 .user-wrap .title {
   width: 100%;
   margin-left: 0%;
@@ -3228,12 +3227,12 @@ select {
   margin: 15px 0 0 0;
   font-weight: 300;
 }
-/* line 55, ../sass/layout/_user.sass */
+/* line 54, ../sass/layout/_user.sass */
 .user-wrap .title span {
   border-bottom: 1px solid #fdc14c;
   font-family: "dosis";
 }
-/* line 59, ../sass/layout/_user.sass */
+/* line 58, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap {
   width: 100%;
   margin-left: 0%;
@@ -3241,7 +3240,7 @@ select {
   padding: 15px;
   padding: 0;
 }
-/* line 63, ../sass/layout/_user.sass */
+/* line 62, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap {
   width: 25%;
   margin-left: 0%;
@@ -3253,16 +3252,16 @@ select {
   -webkit-transition: filter 0.5s ease-in-out;
   transition: filter 0.5s ease-in-out;
 }
-/* line 69, ../sass/layout/_user.sass */
+/* line 68, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap.bg-filter {
   filter: sepia(60%);
 }
-/* line 71, ../sass/layout/_user.sass */
+/* line 70, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap.bg-filter:hover {
   filter: sepia(0);
 }
 @media only screen and (max-width: 1170px) {
-  /* line 63, ../sass/layout/_user.sass */
+  /* line 62, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap {
     width: 33.33333%;
     margin-left: 0%;
@@ -3272,7 +3271,7 @@ select {
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 63, ../sass/layout/_user.sass */
+  /* line 62, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap {
     width: 50%;
     margin-left: 0%;
@@ -3281,7 +3280,7 @@ select {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 63, ../sass/layout/_user.sass */
+  /* line 62, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap {
     width: 100%;
     margin-left: 0%;
@@ -3290,7 +3289,7 @@ select {
     padding: 15px 0;
   }
 }
-/* line 83, ../sass/layout/_user.sass */
+/* line 82, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-img {
   width: 100%;
   margin-left: 0%;
@@ -3303,7 +3302,7 @@ select {
   padding: 0;
 }
 @media only screen and (max-width: 960px) {
-  /* line 83, ../sass/layout/_user.sass */
+  /* line 82, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap .recipe-img {
     width: 100%;
     margin-left: 0%;
@@ -3313,7 +3312,7 @@ select {
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 83, ../sass/layout/_user.sass */
+  /* line 82, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap .recipe-img {
     width: 100%;
     margin-left: 0%;
@@ -3323,7 +3322,7 @@ select {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 83, ../sass/layout/_user.sass */
+  /* line 82, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap .recipe-img {
     width: 100%;
     margin-left: 0%;
@@ -3332,18 +3331,18 @@ select {
     padding: 0;
   }
 }
-/* line 98, ../sass/layout/_user.sass */
+/* line 97, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-img.hover {
   width: 100%;
   position: absolute;
   bottom: 0;
   height: 5px;
 }
-/* line 104, ../sass/layout/_user.sass */
+/* line 103, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-img img {
   display: block;
 }
-/* line 108, ../sass/layout/_user.sass */
+/* line 107, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info {
   width: calc(100% - 30px);
   height: calc(100% - 30px);
@@ -3359,7 +3358,7 @@ select {
   color: white;
 }
 @media screen and (max-width: 480px) {
-  /* line 108, ../sass/layout/_user.sass */
+  /* line 107, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info {
     width: 100%;
     margin-left: 0%;
@@ -3369,117 +3368,117 @@ select {
     padding: 15px 0;
   }
 }
-/* line 126, ../sass/layout/_user.sass */
+/* line 125, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info a {
   color: #fdc14c;
   font-weight: 800;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
-/* line 130, ../sass/layout/_user.sass */
+/* line 129, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info a:hover {
   color: #fdc14c;
 }
-/* line 132, ../sass/layout/_user.sass */
+/* line 131, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .fa {
   color: #fdc14c;
   padding: 0 5px;
 }
-/* line 135, ../sass/layout/_user.sass */
+/* line 134, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .name {
   font-size: 1.5em;
   font-weight: 800;
   padding: 30px 0 15px 0;
 }
-/* line 139, ../sass/layout/_user.sass */
+/* line 138, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .name a {
   display: block;
   min-height: 60px;
 }
 @media only screen and (max-width: 960px) {
-  /* line 135, ../sass/layout/_user.sass */
+  /* line 134, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .name {
     font-size: 1.2em;
     padding: 15px 0 15px 0;
   }
-  /* line 145, ../sass/layout/_user.sass */
+  /* line 144, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .name a {
     min-height: 42px;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 135, ../sass/layout/_user.sass */
+  /* line 134, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .name {
     padding: 15px;
     font-size: 1em;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 135, ../sass/layout/_user.sass */
+  /* line 134, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .name {
     padding: 15px 10px;
     font-size: 1.5em;
   }
-  /* line 153, ../sass/layout/_user.sass */
+  /* line 152, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .name a {
     min-height: 60px;
   }
 }
-/* line 156, ../sass/layout/_user.sass */
+/* line 155, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .info, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .rating, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .user, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .date, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .category, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .recipes .popular .food-item-box-l .food-text-block .uploader, .recipes .popular .food-item-box-l .food-text-block .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .uploader, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .views, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .rating, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .rating, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .user, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .user, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .date, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .date, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .category, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .category, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .recipes .popular .food-item-box-l .food-text-block .uploader, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .recipes .popular .food-item-box-l .food-text-block .uploader, .user-wrap .user-recipes-wrap .recipe-wrap .recipes .popular .food-item-box-l .food-text-block .recipe-container .recipes-list .recipe-box .recipe-info .uploader, .recipes .popular .food-item-box-l .food-text-block .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .uploader, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .views, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .views {
   font-size: 1em;
 }
 @media screen and (max-width: 640px) {
-  /* line 156, ../sass/layout/_user.sass */
+  /* line 155, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .info, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .rating, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .user, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .date, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .category, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .recipes .popular .food-item-box-l .food-text-block .uploader, .recipes .popular .food-item-box-l .food-text-block .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .uploader, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .views, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .rating, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .rating, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .user, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .user, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .date, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .date, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .category, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .category, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .recipes .popular .food-item-box-l .food-text-block .uploader, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .recipes .popular .food-item-box-l .food-text-block .uploader, .user-wrap .user-recipes-wrap .recipe-wrap .recipes .popular .food-item-box-l .food-text-block .recipe-container .recipes-list .recipe-box .recipe-info .uploader, .recipes .popular .food-item-box-l .food-text-block .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .uploader, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .views, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .views {
     font-size: 0.8em;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 156, ../sass/layout/_user.sass */
+  /* line 155, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .info, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .rating, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .user, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .date, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .category, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .recipes .popular .food-item-box-l .food-text-block .uploader, .recipes .popular .food-item-box-l .food-text-block .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .uploader, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .views, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .rating, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .rating, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .user, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .user, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .date, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .date, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .category, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .category, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .recipes .popular .food-item-box-l .food-text-block .uploader, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .recipes .popular .food-item-box-l .food-text-block .uploader, .user-wrap .user-recipes-wrap .recipe-wrap .recipes .popular .food-item-box-l .food-text-block .recipe-container .recipes-list .recipe-box .recipe-info .uploader, .recipes .popular .food-item-box-l .food-text-block .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .uploader, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .views, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .views {
     font-size: 1em;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 156, ../sass/layout/_user.sass */
+  /* line 155, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .info, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .rating, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .user, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .date, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .category, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .recipes .popular .food-item-box-l .food-text-block .uploader, .recipes .popular .food-item-box-l .food-text-block .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .uploader, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .views, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .rating, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .rating, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .user, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .user, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .date, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .date, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .category, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .category, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .recipes .popular .food-item-box-l .food-text-block .uploader, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .recipes .popular .food-item-box-l .food-text-block .uploader, .user-wrap .user-recipes-wrap .recipe-wrap .recipes .popular .food-item-box-l .food-text-block .recipe-container .recipes-list .recipe-box .recipe-info .uploader, .recipes .popular .food-item-box-l .food-text-block .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .uploader, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-container .recipes-list .recipe-box .recipe-info .views, .recipe-container .recipes-list .recipe-box .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .views {
     padding: 5px;
   }
 }
-/* line 165, ../sass/layout/_user.sass */
+/* line 164, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .rating {
   position: absolute;
   bottom: 15px;
   right: 15px;
 }
 @media screen and (max-width: 640px) {
-  /* line 165, ../sass/layout/_user.sass */
+  /* line 164, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .rating {
     padding: 0;
   }
 }
-/* line 173, ../sass/layout/_user.sass */
+/* line 172, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .rating .fa-thumbs-down {
   -ms-transform: scale(-1, 1);
   -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
-/* line 179, ../sass/layout/_user.sass */
+/* line 178, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .date {
   padding: 5px 0;
 }
 @media screen and (max-width: 640px) {
-  /* line 179, ../sass/layout/_user.sass */
+  /* line 178, ../sass/layout/_user.sass */
   .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .date {
     padding: 0;
   }
 }
-/* line 185, ../sass/layout/_user.sass */
+/* line 184, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .category, .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .recipes .popular .food-item-box-l .food-text-block .uploader, .recipes .popular .food-item-box-l .food-text-block .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .uploader {
   color: white;
 }
-/* line 189, ../sass/layout/_user.sass */
+/* line 188, ../sass/layout/_user.sass */
 .user-wrap .user-recipes-wrap .recipe-wrap .recipe-info .views {
   padding: 0;
   position: absolute;
@@ -3487,20 +3486,20 @@ select {
   left: 15px;
 }
 
-/* line 196, ../sass/layout/_user.sass */
+/* line 195, ../sass/layout/_user.sass */
 #purple {
   opacity: 0;
   fill: #fdc14c;
   animation: animate-purple 0.5s linear 0s 1 normal forwards;
 }
 
-/* line 201, ../sass/layout/_user.sass */
+/* line 200, ../sass/layout/_user.sass */
 #orange {
   opacity: 0;
   animation: animate-orange 0.5s linear 0s 1 normal forwards;
 }
 
-/* line 204, ../sass/layout/_user.sass */
+/* line 203, ../sass/layout/_user.sass */
 #user {
   fill: #331b4d;
   opacity: 0;
@@ -3508,7 +3507,7 @@ select {
 }
 
 @keyframes animate-purple {
-  /* line 210, ../sass/layout/_user.sass */
+  /* line 209, ../sass/layout/_user.sass */
   0% {
     -ms-transform: scale(0, 1);
     -webkit-transform: scale(0, 1);
@@ -3516,7 +3515,7 @@ select {
     opacity: 0;
   }
 
-  /* line 213, ../sass/layout/_user.sass */
+  /* line 212, ../sass/layout/_user.sass */
   100% {
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
@@ -3526,7 +3525,7 @@ select {
 }
 
 @keyframes animate-orange {
-  /* line 218, ../sass/layout/_user.sass */
+  /* line 217, ../sass/layout/_user.sass */
   0% {
     -ms-transform: translate(10%, 20%);
     -webkit-transform: translate(10%, 20%);
@@ -3534,7 +3533,7 @@ select {
     opacity: 0;
   }
 
-  /* line 221, ../sass/layout/_user.sass */
+  /* line 220, ../sass/layout/_user.sass */
   100% {
     -ms-transform: translate(100%, 0);
     -webkit-transform: translate(100%, 0);
@@ -3544,7 +3543,7 @@ select {
 }
 
 @keyframes animate-user {
-  /* line 226, ../sass/layout/_user.sass */
+  /* line 225, ../sass/layout/_user.sass */
   0% {
     -ms-transform: translate(300%, 0%);
     -webkit-transform: translate(300%, 0%);
@@ -3552,7 +3551,7 @@ select {
     opacity: 0;
   }
 
-  /* line 229, ../sass/layout/_user.sass */
+  /* line 228, ../sass/layout/_user.sass */
   100% {
     -ms-transform: translate(220%, 0);
     -webkit-transform: translate(220%, 0);
@@ -3561,32 +3560,32 @@ select {
   }
 }
 
-/* line 237, ../sass/layout/_user.sass */
+/* line 236, ../sass/layout/_user.sass */
 .mfp-zoom-in .mfp-with-anim {
   opacity: 0;
   transition: all 0.2s ease-in-out;
   transform: scale(0.8);
 }
-/* line 243, ../sass/layout/_user.sass */
+/* line 242, ../sass/layout/_user.sass */
 .mfp-zoom-in.mfp-bg {
   opacity: 0;
   transition: all 0.3s ease-out;
 }
-/* line 249, ../sass/layout/_user.sass */
+/* line 248, ../sass/layout/_user.sass */
 .mfp-zoom-in.mfp-ready .mfp-with-anim {
   opacity: 1;
   transform: scale(1);
 }
-/* line 253, ../sass/layout/_user.sass */
+/* line 252, ../sass/layout/_user.sass */
 .mfp-zoom-in.mfp-bg {
   opacity: 0.8;
 }
-/* line 259, ../sass/layout/_user.sass */
+/* line 258, ../sass/layout/_user.sass */
 .mfp-zoom-in.mfp-removing .mfp-with-anim {
   transform: scale(0.8);
   opacity: 0;
 }
-/* line 263, ../sass/layout/_user.sass */
+/* line 262, ../sass/layout/_user.sass */
 .mfp-zoom-in.mfp-removing.mfp-bg {
   opacity: 0;
 }
