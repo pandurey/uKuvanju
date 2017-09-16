@@ -103,7 +103,6 @@ class Korisnik extends Frontend {
 			
 		}else{
 			if($has_image):	
-				//promeni upload folder ////////////////////////////////////
 				//upload slike
 				$config['upload_path']          = './uploads/';
 				$config['folder']				= "uploads/";

@@ -2,6 +2,8 @@
 	
 class Admin_model extends CI_Model 
 {
+	var $id_user;
+
 	function __construct()
 	{
 		parent::__construct();
@@ -9,6 +11,11 @@ class Admin_model extends CI_Model
 		$this->load->database();
 		$this->load->library('email');
 		$this->load->helper('string');
+	}
+
+	function set_id_user($id)
+	{
+		$this->id_user = $id;
 	}
 
 	function get_table($table, $limit = null, $offset = null)
@@ -80,6 +87,15 @@ class Admin_model extends CI_Model
 			$this->db->delete('anketa_odgovori');
 		endif;
 
+	}
+
+	function update($tip = null, $data)
+	{
+		if($tip == "korisnici"):
+			$this->db->set($data);
+			$this->db->where('id', $this->id_user);
+			$this->db->update('users');
+		endif;
 	}
 
 	function pagination($page)

@@ -19,6 +19,15 @@
 			return $this->db->get();
 		}
 
+		function get_user($id = null)
+		{
+			$this->db->select('*');
+			$this->db->from('users');
+			$this->db->join('uloge', 'users.id_uloge = uloge.id_uloga');
+			$this->db->where('id', $id);
+			return $this->db->get();
+		}
+
 		function register($email, $user, $pass)
 		{	
 			$verification_code = random_string('alnum', 16);

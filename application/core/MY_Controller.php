@@ -68,6 +68,8 @@
 
 		public function load_view($view, $data)
 		{	
+			$data['error']		= checkFlashdata('error');
+
 			if($this->data['role'] != 'admin') {redirect('/');}
 
 			$var = array_merge($this->data,$data);

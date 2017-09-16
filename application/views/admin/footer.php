@@ -9,18 +9,19 @@
 				changeBorderColor(this);
 			});
 
-			
 			//checkbox check/uncheck
 			$('.checkbox label').on('click', function(e){
 				if($(this).hasClass('check')){$(this).removeClass('check');}
 				else{ $(this).addClass('check');}
 			});
+
 			//close add div
 			$('.btn-close').click(function(e){
 				e.preventDefault();
 				
 				$('.add').removeClass('active');
 			})
+
 			//alert
 			setTimeout(function(){
 				$('.message-alert').fadeOut(500);
@@ -36,7 +37,7 @@
 			});
 			//izmena
 			$('.edit').click(function(e){
-				e.preventDefault();
+				//e.preventDefault();
 
 				//var id = $(this).closest('tr').find('td').find('input')[0].value;
 				var niz = new Array();
@@ -67,6 +68,24 @@
 				var is_admin = $('#cb-is-admin').is(':checked') ? 1 : 0;
 
 				dodaj_korisnika(username, pass, email, active_status, is_admin);
+			});
+
+			//check button checked
+			if($('#lbCheck-admin').hasClass('check')){
+				$('#cbadmin').prop('checked', true);
+			}
+			if($('#lbCheck-active').hasClass('check')){
+				$('#cbactive').prop('checked', true);
+			}
+			$('#potvrdiIzmene').click(function(e){
+				//e.preventDefault();
+				
+				var admin = $('#cbadmin').is(':checked') ? 1 : 0;
+				var active = $('#cbactive').is(':checked') ? 1 : 0;
+				var username = $('#editUsername').val();
+				var email = $('#editEmail').val();
+
+				
 			});
 
 			$('#add-nav').click(function(e){
@@ -170,6 +189,21 @@
 			}else{
 				$('#'+e.id).removeClass('active');
 			}
+		}
+
+		//selektovanje slike
+		function selectUserImg(input) {
+		    if (input.files && input.files[0]) {
+		        
+		        var reader = new FileReader();
+		            
+		        reader.onload = function (e) {
+		            $(".img-icon").css('background', 'url('+e.target.result+')');
+		            $(".img-icon").css('background-size', 'cover');
+		        }
+		          
+		        reader.readAsDataURL(input.files[0]);
+		    }
 		}
 		
 	</script>
