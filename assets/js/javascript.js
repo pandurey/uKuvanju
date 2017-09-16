@@ -238,11 +238,12 @@ function calc_date(date){
 					//console.log(nowDay + 30);
 					return "pre " + ((nowDay + 30) - dbDay) + " dana";
 				}else{
-					if(dbYear == nowYear){
-						return "pre više od mesec dana";
-					}else{
-						return 'pre više od godinu dana';
-					}
+					
+						if(dbYear == nowYear){
+							return "pre više od mesec dana";
+						}else{
+							return 'pre više od godinu dana';
+						}
 				}
 			}
 		}
